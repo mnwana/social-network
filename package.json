@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5"
+  },
+  "name": "social-network",
+  "version": "1.0.0",
+  "main": "node server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnwana/social-network.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnwana/social-network/issues"
+  },
+  "homepage": "https://github.com/mnwana/social-network#readme",
+  "description": ""
+}
