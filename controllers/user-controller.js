@@ -18,7 +18,7 @@ const userController = {
   },
   // get one user by id
   getUserById({ params }, res) {
-    User.findOne({ __id: params.id })
+    User.findOne({ _id: params.id })
       .populate({
         path: "thoughts",
         select: "-__v",
@@ -58,7 +58,7 @@ const userController = {
       .catch((err) => res.json(err));
   },
   //   add friend
-  addFriend({ params }) {
+  addFriend({ params }, res) {
     User.findOneAndUpdate(
       { _id: params.userId },
       { $push: { friends: params.friendId } },
